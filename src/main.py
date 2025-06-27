@@ -10,9 +10,9 @@ app.add_middleware(
     allow_origins=origins,
     allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=[*],
+    allow_headers=["*"],
 )
 
-@app.get("/")
+@app.get("/")https://github.com/RaphBourgeois/HomeGymBE/branches
 def home():
     return "Hello, World!from back end"
