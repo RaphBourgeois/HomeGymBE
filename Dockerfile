@@ -18,5 +18,5 @@ RUN pip install -r requirements.txt
 COPY src/ .
 
 #RUN uvicorn src.main:app --reload --host 0.0.0.0 --port 5000
-CMD ["uvicorn", "src.main:app", "--reload", "--host 0.0.0.0", "--port", "5000"]
+CMD ["uvicorn", "src.main:app", "--reload", "--host", "0.0.0.0", "--port", "5000"]
 #CMD ["uvicorn", "run", "src.main.py", "--host", "0.0.0.0", "--port", "5000"]
