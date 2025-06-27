@@ -8,9 +8,9 @@ origins = ["https://685e8bc9c651b36cdd948228--homegymfe.netlify.app:8080", "http
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=["X-Requested-With", "Content-Type"],
+    allow_headers=[*],
 )
 
 @app.get("/")
