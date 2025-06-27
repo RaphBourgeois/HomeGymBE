@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-origins = ["https://685e8bc9c651b36cdd948228--homegymfe.netlify.app:8080"]
+origins = ["https://homegymfe.netlify.app:5000/","https://homegymfe.netlify.app/","*"]
 
 
 app.add_middleware(
