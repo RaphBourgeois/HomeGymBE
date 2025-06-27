@@ -13,6 +13,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")https://github.com/RaphBourgeois/HomeGymBE/branches
+@app.get("/")
 def home():
     return "Hello, World!from back end"
